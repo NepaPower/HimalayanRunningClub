@@ -105,12 +105,11 @@
   .program { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
   .item { background: var(--card); border-radius: 12px; border: 1px solid var(--line); overflow: hidden; }
   .item .media { width: 100%; aspect-ratio: 940 / 788; object-fit: cover; display: block; border-bottom: 1px solid var(--line); }
-  /* Whole card clickable; the phone link inside stays on top and tappable */
+  /* Whole card clickable */
   .item.linked { position: relative; transition: transform .15s ease, box-shadow .15s ease; }
   .item.linked:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(120, 70, 0, .15); }
   .card-link { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
   .card-link:focus-visible { outline: 3px solid var(--indigo); outline-offset: 2px; }
-  .item.linked a[href^="tel:"] { position: relative; z-index: 2; }
   .item .ph { display: flex; align-items: center; justify-content: center; font-size: 64px; background: #fdebd0; }
   .item h3 { margin: 14px 18px 4px; font-size: 18px; color: var(--ink); }
   .item p { margin: 0 18px 18px; color: var(--muted); font-size: 16px; }
@@ -252,7 +251,7 @@
       <div class="program">
         <div class="item"><img class="media" src="galli2ndedition.jpeg" width="940" height="788" loading="lazy" alt="Galli Run 2nd Edition logo"><h3>Galli Run</h3><p>Approx. 8.5 km through the heritage lanes of Patan.</p></div>
         <div class="item"><img class="media" src="newaribhoj.jpeg" width="940" height="788" loading="lazy" alt="A Newari Bhoj plate: beaten rice, beans, curries and meat on a leaf plate"><h3>Newari Bhoj</h3><p>A traditional Newari feast after the run.</p></div>
-        <div class="item linked"><a class="card-link" href="#blood-en" aria-label="Blood donation details"></a><img class="media" src="blooddonation.jpeg" width="940" height="788" loading="lazy" alt="Blood Donation, with a red blood drop"><h3>Blood donation</h3><p>Give blood, save lives. 8 AM – 12 noon.<br><b>RSVP:</b> Mr. Ratna Byanjankar, <a href="tel:+9779841254761">9841254761</a></p></div>
+        <div class="item linked"><a class="card-link" href="#blood-en" aria-label="Blood donation details"></a><img class="media" src="blooddonation.jpeg" width="940" height="788" loading="lazy" alt="Blood Donation, with a red blood drop"><h3>Blood donation</h3><p>Give blood, save lives. 8 AM – 12 noon.<br><b>RSVP:</b> Mr. Ratna Byanjankar, 9841254761</p></div>
         <div class="item"><img class="media" src="art1.jpeg" width="940" height="788" loading="lazy" alt="Art Exhibition: pencil drawings of a cupcake, hands with butterflies, and a hair bow"><h3>Art exhibition</h3><p>Curated by <strong>The Precious Arts</strong>.</p></div>
         <div class="item"><img class="media" src="music1.jpeg" width="940" height="788" loading="lazy" alt="Live Music, with an illustrated sitar"><h3>Live music</h3><p><strong>Kanta Dab Dab</strong> and <strong>Flute Notes by Sangya</strong>.</p></div>
       </div>
@@ -362,7 +361,7 @@
       <div class="program">
         <div class="item"><img class="media" src="galli2ndedition.jpeg" width="940" height="788" loading="lazy" alt="Galli Run 2nd Edition logo"><h3>गल्ली दौड (करिब ८.५ कि.मी.)</h3><p>च्यासल र पाटनका ऐतिहासिक गल्लीहरूमा रोमाञ्चक दौड। प्रत्येक दर्ता भएका धावकले आकर्षक <strong>फिनिसर मेडल</strong>, <strong>आधिकारिक टि–सर्ट</strong> र <strong>रिफ्रेसमेन्ट</strong> प्राप्त गर्नुहुनेछ।</p></div>
         <div class="item"><img class="media" src="newaribhoj.jpeg" width="940" height="788" loading="lazy" alt="A Newari Bhoj plate: beaten rice, beans, curries and meat on a leaf plate"><h3>परम्परागत नेवारी भोज</h3><p>दौडको समापनपछि मौलिक र स्वादिलो नेवारी भोजको आनन्द लिनुहोस्।</p></div>
-        <div class="item linked"><a class="card-link" href="#blood-ne" aria-label="रक्तदान विवरण"></a><img class="media" src="blooddonation.jpeg" width="940" height="788" loading="lazy" alt="Blood Donation, with a red blood drop"><h3>रक्तदान कार्यक्रम</h3><p>दौडसँगै समुदायप्रतिको उत्तरदायित्व निभाउँदै रक्तदान कार्यक्रममा सहभागी बन्नुहोस्। बिहान ८ – दिउँसो १२ बजे।<br><b>सम्पर्क (RSVP):</b> श्री रत्न ब्यञ्जनकार, <a href="tel:+9779841254761">९८४१२५४७६१</a></p></div>
+        <div class="item linked"><a class="card-link" href="#blood-ne" aria-label="रक्तदान विवरण"></a><img class="media" src="blooddonation.jpeg" width="940" height="788" loading="lazy" alt="Blood Donation, with a red blood drop"><h3>रक्तदान कार्यक्रम</h3><p>दौडसँगै समुदायप्रतिको उत्तरदायित्व निभाउँदै रक्तदान कार्यक्रममा सहभागी बन्नुहोस्। बिहान ८ – दिउँसो १२ बजे।<br><b>सम्पर्क (RSVP):</b> श्री रत्न ब्यञ्जनकार, ९८४१२५४७६१</p></div>
         <div class="item"><img class="media" src="art1.jpeg" width="940" height="788" loading="lazy" alt="Art Exhibition: pencil drawings of a cupcake, hands with butterflies, and a hair bow"><h3>कला प्रदर्शनी</h3><p><strong>द प्रेसियस आर्ट्स (The Precious Arts)</strong>द्वारा संयोजित, स्थानीय कला र संस्कृति झल्काउने विशेष कला प्रदर्शनीको अवलोकन गर्नुहोस्।</p></div>
         <div class="item"><img class="media" src="music1.jpeg" width="940" height="788" loading="lazy" alt="Live Music, with an illustrated sitar"><h3>प्रत्यक्ष साङ्गीतिक प्रस्तुति</h3><p><strong>चिकंबही, च्यासल</strong>मा <strong>कान्ता दब दब (Kanta dAb dAb)</strong> र <strong>फ्लुट नोट्स (Flute Notes)</strong>को विशेष लाइभ प्रस्तुतिमा झुम्नुहोस्।</p></div>
       </div>
