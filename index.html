@@ -82,6 +82,7 @@
   h1 .np { display: block; font-family: var(--font-body); color: var(--saffron); font-weight: 800; text-shadow: 2px 2px 0 #8a1f1f; font-size: .8em; margin-top: 6px; }
   h1 .en-sub { display: block; font-family: var(--font-heading); color: var(--saffron); text-shadow: 2px 2px 0 #8a1f1f; font-size: .6em; margin-top: 8px; }
   .hero-top { margin-bottom: 24px; }
+  .hero-top .edition { margin-top: 0; }
   .tagline-ne { margin: 0 auto 6px; max-width: 900px; color: var(--sunset); font-weight: 600; font-size: clamp(20px, 2.6vw, 25px); line-height: 1.4; }
   .subhead { margin: 14px auto 22px; max-width: 760px; color: var(--muted); }
   .countdown { margin: 14px 0 22px; color: var(--muted); }
@@ -177,6 +178,10 @@
 </header>
 
 <div class="wrap hero" style="padding-bottom:0">
+  <div class="hero-top" data-only="en" lang="en">
+    <p class="edition">Second edition</p>
+    <h1>Galli Run 2026</h1>
+  </div>
   <div class="hero-top" data-only="ne" lang="ne" hidden>
     <p class="tagline-ne">सम्पदामा दौडनुहोस्, संस्कृतिको स्वाद लिनुहोस्, कलाको अनुभूति गर्नुहोस्, र सङ्गीतमा रमाउनुहोस्।</p>
     <h1>गल्ली दौड २०२६</h1>
@@ -189,8 +194,6 @@
 <!-- ============================ ENGLISH ============================ -->
 <main data-only="en" lang="en">
   <div class="wrap hero">
-    <p class="edition">Second edition</p>
-    <h1>Galli Run 2026<span class="np" lang="ne">गल्ली दौड</span></h1>
     <p class="countdown" data-countdown="en">Approx. 8.5 km through the gallis of Patan</p>
     <a class="btn big" href="https://docs.google.com/forms/d/e/1FAIpQLSdPWwAnvQ1sj2Uc_uJWBFY7emI85r5O5_gUUrW-jGQ59wdAfA/viewform" target="_blank" rel="noopener">Register now</a>
 
