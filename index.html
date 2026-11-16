@@ -81,7 +81,8 @@
   h1 { font-family: var(--font-heading); color: var(--indigo); font-size: clamp(32px, 6vw, 54px); line-height: 1.1; margin: 0; }
   h1 .np { display: block; font-family: var(--font-body); color: var(--saffron); font-weight: 800; text-shadow: 2px 2px 0 #8a1f1f; font-size: .8em; margin-top: 6px; }
   h1 .en-sub { display: block; font-family: var(--font-heading); color: var(--saffron); text-shadow: 2px 2px 0 #8a1f1f; font-size: .6em; margin-top: 8px; }
-  .tagline-ne { margin: 28px auto 6px; max-width: 720px; color: var(--sunset); font-weight: 600; font-size: 19px; }
+  .hero-top { margin-bottom: 24px; }
+  .tagline-ne { margin: 0 auto 6px; max-width: 720px; color: var(--sunset); font-weight: 600; font-size: 19px; }
   .subhead { margin: 14px auto 22px; max-width: 760px; color: var(--muted); }
   .countdown { margin: 14px 0 22px; color: var(--muted); }
 
@@ -176,6 +177,10 @@
 </header>
 
 <div class="wrap hero" style="padding-bottom:0">
+  <div class="hero-top" data-only="ne" lang="ne" hidden>
+    <p class="tagline-ne">सम्पदामा दौडनुहोस्, संस्कृतिको स्वाद लिनुहोस्, कलाको अनुभूति गर्नुहोस्, र सङ्गीतमा रमाउनुहोस्।</p>
+    <h1>गल्ली दौड २०२६<span class="en-sub" lang="en">Galli Run 2026</span></h1>
+  </div>
   <div class="poster">
     <img src="galli-run-2026.webp" width="2000" height="1000" alt="Galli Run 2026 poster: Himalayan Running Club, approx. 8.5 km, Sunday 29 November 2026 at 3 PM, Chyasal Tole, Patan, Lalitpur">
   </div>
@@ -275,8 +280,6 @@
 <!-- ============================ NEPALI ============================ -->
 <main data-only="ne" lang="ne" hidden>
   <div class="wrap hero">
-    <p class="tagline-ne">सम्पदामा दौडनुहोस्, संस्कृतिको स्वाद लिनुहोस्, कलाको अनुभूति गर्नुहोस्, र सङ्गीतमा रमाउनुहोस्।</p>
-    <h1>गल्ली दौड २०२६<span class="en-sub" lang="en">Galli Run 2026</span></h1>
     <p class="subhead"><strong>हिमालयन रनिङ क्लब</strong> (<em>द हल्का रनर्स २०८१</em>) द्वारा आयोजित — पाटनका ऐतिहासिक गल्ली र बहालहरू हुँदै करिब ८.५ किलोमिटरको सम्पदा दौड, जसको समापनमा परम्परागत नेवारी भोज, कला प्रदर्शनी, रक्तदान कार्यक्रम र प्रत्यक्ष साङ्गीतिक प्रस्तुति रहनेछ।</p>
     <p class="countdown" data-countdown="ne" hidden></p>
     <a class="btn big" href="https://docs.google.com/forms/d/e/1FAIpQLSdPWwAnvQ1sj2Uc_uJWBFY7emI85r5O5_gUUrW-jGQ59wdAfA/viewform" target="_blank" rel="noopener">अहिले दर्ता गर्नुहोस्</a>
