@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galli Run 2026 · Himalayan Running Club</title>
+<meta name="description" content="Galli Run 2026, second edition: an approx. 8.5 km run through the gallis of Patan, followed by Newari Bhoj, live music, an art exhibition and blood donation. Sunday 29 Nov 2026, 3 PM, Chyasal, Lalitpur.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.himalayanrunningclub.com/">
+<meta property="og:title" content="Galli Run 2026 · Himalayan Running Club">
+<meta property="og:description" content="Run the heritage, taste the culture, feel the art, live the music. Sunday 29 Nov 2026 · 3 PM · Chyasal, Patan.">
+<meta property="og:image" content="https://www.himalayanrunningclub.com/galli-run-2026.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Mukta:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #f5a623;
+    --sunset: #e8611c;
+    --gold: #9a6b12;
+    --indigo: #23238f;
+    --ink: #1d1a17;
+    --muted: #5d554b;
+    --paper: #fffaf1;
+    --card: #ffffff;
+    --line: #eedfc4;
+    --font-heading: "Libre Baskerville", Georgia, serif;
+    --font-body: "Mukta", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  a { color: var(--indigo); }
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+  /* Top bar */
+  .top {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255, 250, 241, .92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 60px; }
+  .brand { font-family: var(--font-heading); font-weight: 700; color: var(--indigo); text-decoration: none; font-size: 17px; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 800;
+    background: var(--saffron); color: #6a1d00;
+    border-radius: 999px; padding: 10px 22px;
+    box-shadow: 0 2px 0 #c97f0a;
+    transition: transform .1s ease, background .15s ease;
+    white-space: nowrap;
+  }
+  .btn:hover { background: #ffb636; transform: translateY(-1px); }
+  .btn.big { font-size: 20px; padding: 14px 32px; }
+
+  /* Hero */
+  .hero { padding: 32px 0 8px; text-align: center; }
+  .tagline { font-family: var(--font-heading); color: var(--muted); font-size: clamp(15px, 2.2vw, 20px); margin: 0 0 18px; }
+  .poster { border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(120, 70, 0, .15); background: #fff; }
+  .edition { margin: 28px 0 4px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--sunset); font-size: 14px; }
+  h1 { font-family: var(--font-heading); color: var(--indigo); font-size: clamp(32px, 6vw, 54px); line-height: 1.1; margin: 0; }
+  h1 .np { display: block; font-family: var(--font-body); color: var(--saffron); font-weight: 800; text-shadow: 2px 2px 0 #8a1f1f; font-size: .8em; margin-top: 6px; }
+  .countdown { margin: 14px 0 22px; color: var(--muted); }
+
+  /* Key facts */
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 26px 0 8px; text-align: left; }
+  .fact { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; }
+  .fact svg { flex: none; width: 28px; height: 28px; color: var(--sunset); margin-top: 2px; }
+  .fact b { display: block; color: var(--indigo); }
+  .fact span { color: var(--muted); font-size: 16px; }
+
+  section { padding: 44px 0; }
+  h2 { font-family: var(--font-heading); color: var(--indigo); font-size: clamp(24px, 3.5vw, 32px); margin: 0 0 18px; }
+  .lead { font-size: 19px; max-width: 760px; }
+  .alt { background: #fff3dc; }
+
+  /* Program */
+  .program { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+  .item { background: var(--card); border-radius: 12px; border: 1px solid var(--line); padding: 18px; }
+  .item .ic { font-size: 28px; line-height: 1; }
+  .item h3 { margin: 10px 0 4px; font-size: 18px; color: var(--ink); }
+  .item p { margin: 0; color: var(--muted); font-size: 16px; }
+
+  .includes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .pill { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; font-weight: 600; color: var(--gold); }
+
+  /* Tickets */
+  .tickets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .ticket { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px 20px; text-align: center; display: flex; flex-direction: column; }
+  .ticket.best { border: 2px solid var(--saffron); box-shadow: 0 8px 22px rgba(245, 166, 35, .25); position: relative; }
+  .ticket.best::before { content: "Full experience"; position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--saffron); color: #6a1d00; font-weight: 800; font-size: 13px; padding: 2px 12px; border-radius: 999px; white-space: nowrap; }
+  .ticket .price { font-family: var(--font-heading); font-size: 34px; color: var(--indigo); font-weight: 700; }
+  .ticket .price small { font-size: 18px; color: var(--muted); font-weight: 400; }
+  .ticket .what { margin: 8px 0 0; color: var(--muted); }
+
+  /* Facilities */
+  .facilities { display: flex; flex-wrap: wrap; gap: 12px; }
+  .facility { display: flex; align-items: center; gap: 10px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 18px; font-weight: 600; }
+  .facility svg { width: 22px; height: 22px; color: #2e8b57; }
+
+  /* CTA */
+  .cta { text-align: center; background: linear-gradient(160deg, #ffcf6b 0%, var(--saffron) 45%, var(--sunset) 100%); color: #3b1300; }
+  .cta h2 { color: #2a0f6b; }
+  .cta p { max-width: 640px; margin: 0 auto 24px; font-size: 19px; }
+  .cta .btn { background: var(--indigo); color: #fff; box-shadow: 0 3px 0 #11115a; }
+  .cta .btn:hover { background: #2f2fb0; }
+
+  footer { padding: 32px 0 40px; text-align: center; color: var(--muted); font-size: 16px; }
+  .social { display: flex; justify-content: center; gap: 14px; margin: 10px 0 16px; }
+  .social a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 600; border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 8px 16px; }
+  .social svg { width: 20px; height: 20px; }
+
+  @media (max-width: 760px) {
+    body { font-size: 17px; }
+    .facts, .tickets { grid-template-columns: 1fr; }
+    .tickets { gap: 22px; }
+    .top .btn { padding: 8px 16px; font-size: 15px; }
+    .brand { font-size: 15px; }
+    section { padding: 34px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Himalayan Running Club</a>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdPWwAnvQ1sj2Uc_uJWBFY7emI85r5O5_gUUrW-jGQ59wdAfA/viewform" target="_blank" rel="noopener">Register</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="poster">
+      <img src="galli-run-2026.webp" width="2000" height="1000" alt="Galli Run 2026 poster: Himalayan Running Club, approx. 8.5 km, Sunday 29 November 2026 at 3 PM, Chyasal Tole, Patan, Lalitpur">
+    </div>
+
+    <p class="edition">Second edition</p>
+    <h1>Galli Run 2026<span class="np" lang="ne">गल्ली दौड</span></h1>
+    <p class="countdown" id="countdown">Approx. 8.5 km through the gallis of Patan</p>
+    <a class="btn big" href="https://docs.google.com/forms/d/e/1FAIpQLSdPWwAnvQ1sj2Uc_uJWBFY7emI85r5O5_gUUrW-jGQ59wdAfA/viewform" target="_blank" rel="noopener">Register now</a>
+
+    <div class="facts">
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <div><b>Sunday, 29 Nov 2026</b><span>13 Mangsir, 2083</span></div>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><b>3 PM – 10 PM</b><span>Run first, then bhoj, music &amp; art</span></div>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><b>Chyasal, Patan, Lalitpur</b><span>Concert venue: Chikanbahi, Chyasal · <a href="https://www.google.com/maps/search/?api=1&amp;query=Chyasal%2C+Patan%2C+Lalitpur" target="_blank" rel="noopener">Map</a></span></div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>About the run</h2>
+      <p class="lead">The Himalayan Running Club is thrilled to announce the <strong>second edition of Galli Run 2026</strong>, a unique running experience that takes participants through the rich heritage of the ancient city of Patan. Runners will experience running through the gallis of Patan, surrounded by the culture, heritage and charm this historic city has to offer.</p>
+      <p class="lead">All runners will receive a <strong>medal</strong> and a <strong>T-shirt</strong> as part of their participation. The run is followed by a traditional Newari Bhoj, live music and an art exhibition, making it a celebration of culture, community and fitness.</p>
+      <div class="includes">
+        <span class="pill">🏅 Medal</span>
+        <span class="pill">👕 T-shirt</span>
+        <span class="pill">🥤 Refreshment</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>The evening</h2>
+      <div class="program">
+        <div class="item"><div class="ic">🏃</div><h3>Galli Run</h3><p>Approx. 8.5 km through the heritage lanes of Patan.</p></div>
+        <div class="item"><div class="ic">🍽️</div><h3>Newari Bhoj</h3><p>A traditional Newari feast after the run.</p></div>
+        <div class="item"><div class="ic">🩸</div><h3>Blood donation</h3><p>Save lives: donate blood at the event.</p></div>
+        <div class="item"><div class="ic">🎨</div><h3>Art exhibition</h3><p>Curated by <strong>The Precious Arts</strong>.</p></div>
+        <div class="item"><div class="ic">🎶</div><h3>Live music</h3><p><strong>Kanta Dab Dab</strong> and <strong>Flute Notes by Sangya</strong>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tickets">
+    <div class="wrap">
+      <h2>Tickets</h2>
+      <div class="tickets">
+        <div class="ticket best">
+          <div class="price"><small>Rs</small> 2,500</div>
+          <p class="what"><strong>Overall package</strong><br>Galli Run + Newari Bhoj + Live Music</p>
+        </div>
+        <div class="ticket">
+          <div class="price"><small>Rs</small> 1,500</div>
+          <p class="what"><strong>Bhoj &amp; music</strong><br>Newari Bhoj + Live Music</p>
+        </div>
+        <div class="ticket">
+          <div class="price"><small>Rs</small> 1,000</div>
+          <p class="what"><strong>Run only</strong><br>Galli Run</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Event facilities</h2>
+      <div class="facilities">
+        <div class="facility"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Drop bag</div>
+        <div class="facility"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Restroom</div>
+        <div class="facility"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Changing space</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Join us in Patan</h2>
+      <p>Join us for a day of saving lives, running, art and culture with a live music celebration in the ancient city of Patan. We look forward to seeing you there!</p>
+      <a class="btn big" href="https://docs.google.com/forms/d/e/1FAIpQLSdPWwAnvQ1sj2Uc_uJWBFY7emI85r5O5_gUUrW-jGQ59wdAfA/viewform" target="_blank" rel="noopener">Register for Galli Run</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Follow us</div>
+    <div class="social">
+      <a href="https://www.instagram.com/himalayan.running/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/himalayanrunningclub/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v7h4v-7h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg>
+        Facebook
+      </a>
+    </div>
+    <div>© 2026 Himalayan Running Club · Patan, Lalitpur</div>
+  </div>
+</footer>
+
+<script>
+  // "N days to go" under the title; falls back to the static text on/after race day.
+  (function () {
+    var el = document.getElementById('countdown');
+    var race = new Date('2026-11-29T15:00:00+05:45');
+    var days = Math.ceil((race - new Date()) / 86400000);
+    if (days > 1) el.textContent = 'Approx. 8.5 km through the gallis of Patan · ' + days + ' days to go';
+    else if (days === 1) el.textContent = 'Approx. 8.5 km through the gallis of Patan · Tomorrow!';
+  })();
+</script>
+</body>
+</html>
