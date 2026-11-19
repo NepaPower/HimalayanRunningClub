@@ -46,6 +46,20 @@
   /* Devanagari: Libre Baskerville has no Nepali glyphs, so Nepali headings use Mukta */
   [lang="ne"] h1, [lang="ne"] h2, [lang="ne"] .brand, [lang="ne"] .price { font-family: var(--font-body); font-weight: 800; }
 
+  /* "Registration closing soon" banner */
+  .closing {
+    display: block; text-align: center; text-decoration: none;
+    background: #c8102e; color: #fff;
+    font-weight: 800; font-size: 18px; letter-spacing: .02em;
+    padding: 10px 16px; line-height: 1.35;
+  }
+  .closing-cta { display: inline-block; margin-left: 10px; background: #fff; color: #c8102e; border-radius: 999px; padding: 2px 12px; font-size: 15px; }
+  .closing:hover .closing-cta { background: var(--saffron); color: #6a1d00; }
+  @media (prefers-reduced-motion: no-preference) {
+    .closing-cta { animation: closing-pulse 1.8s ease-in-out infinite; }
+    @keyframes closing-pulse { 50% { transform: scale(1.06); } }
+  }
+
   /* Top bar */
   .top {
     position: sticky; top: 0; z-index: 10;
@@ -183,6 +197,11 @@
 </style>
 </head>
 <body>
+
+<a class="closing" href="https://docs.google.com/forms/d/e/1FAIpQLSdPWwAnvQ1sj2Uc_uJWBFY7emI85r5O5_gUUrW-jGQ59wdAfA/viewform" target="_blank" rel="noopener">
+  <span data-only="en">Registration Closing Soon !!! <span class="closing-cta">Register now →</span></span>
+  <span data-only="ne" lang="ne" hidden>दर्ता छिट्टै बन्द हुँदैछ !!! <span class="closing-cta">अहिले दर्ता गर्नुहोस् →</span></span>
+</a>
 
 <header class="top">
   <div class="wrap">
